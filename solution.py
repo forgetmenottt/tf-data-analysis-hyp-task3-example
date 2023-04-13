@@ -9,9 +9,9 @@ def solution(x: np.array) -> bool: # Одна или две выборке на 
     alpha = 0.1
     test_stat, p_value = ztest(x, value= 500 )
     if (p_value < alpha):
-        a = True
-    else:
         a = False
+    else:
+        a = True
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
